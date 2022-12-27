@@ -1,5 +1,4 @@
-body = """
-{
+body = {
   "settings": {
     "refresh_interval": "1s",
     "analysis": {
@@ -106,4 +105,3 @@ body = """
     }
   }
 }
-"""

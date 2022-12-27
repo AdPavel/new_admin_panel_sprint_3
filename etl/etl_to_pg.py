@@ -10,8 +10,8 @@ from config.config import settings
 from state import state
 from processes import PgExtractor, Transform, EsLoader
 
-# logging.config.fileConfig('config/log_config')
-# log = logging.getLogger('message.log')
+logging.config.fileConfig('config/log_config')
+log = logging.getLogger(__name__)
 
 
 @backoff()
@@ -23,10 +23,13 @@ def pg_connect(dsl):
 @backoff()
 def es_connect(es_dsl):
     elastic = Elasticsearch([es_dsl],)
-    return elastic
+    if not elastic.ping():
+        raise ValueError('Elasticsearch connection failed')
+    else:
+        return elastic
 
 
-def etl_process(pg_conn: _connection, es_conn, state):
+def etl_process(pg_conn: _connection, es_conn: Elasticsearch, state: state.State):
 
     param_dict = {'fw': 'modified',
                   'pr': 'person_modified',
@@ -38,7 +41,8 @@ def etl_process(pg_conn: _connection, es_conn, state):
     data, key = postgres_extractor.extract()
     if data:
         transform_data = Transform().transforming(data)
-        els.make_load(transform_data)
+        if not els.make_load(transform_data):
+            return None
         state.set_state(key, data[-1][param_dict[key]])
     else:
         return None
@@ -58,7 +62,5 @@ if __name__ == '__main__':
     while True:
         with pg_connect(dsl) as pg_conn, es_connect(es_dsl) as es_conn:
             if not etl_process(pg_conn, es_conn, state):
-                print('No data to update')
+                log.warning('No data to update')
                 time.sleep(30)
-
-

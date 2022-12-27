@@ -20,6 +20,7 @@ class BaseStorage:
 class RedisStorage(BaseStorage):
     def __init__(self, redis_adapter: Redis, dict_name: Optional[str] = None):
         self.redis_adapter = redis_adapter
+        self.dict_name = dict_name
 
     def save_state(self, state: dict) -> None:
 
@@ -52,15 +53,12 @@ class JsonFileStorage(BaseStorage):
         if self.file_path:
             try:
                 if os.stat(self.file_path).st_size > 0:
-                    print("All good")
                     with open(self.file_path) as read_file:
                         self.data = json.load(read_file)
                         return self.data
                 else:
-                    print("empty file")
                     return self.data
             except OSError:
-                print("No file")
                 return self.data
         else:
             return self.data
@@ -87,12 +85,3 @@ class State:
             return result
         else:
             return None
-
-
-# storage = JsonFileStorage(FILE_STORAGE)
-
-# redis_adapter = Redis('localhost')
-# storage = RedisStorage(redis_adapter)
-# state = State(storage)
-# state.set_state('key', 123)
-# print(state.get_state('key'))

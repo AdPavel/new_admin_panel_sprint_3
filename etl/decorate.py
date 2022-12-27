@@ -3,7 +3,8 @@ from functools import wraps
 import logging.config
 
 logging.config.fileConfig('config/log_config')
-log = logging.getLogger('message.log')
+log = logging.getLogger(__name__)
+
 
 def backoff(start_sleep_time=0.1, factor=2, border_sleep_time=10):
     """
@@ -29,7 +30,6 @@ def backoff(start_sleep_time=0.1, factor=2, border_sleep_time=10):
                 except Exception as msg:
                     t = start_sleep_time * factor ** retries
                     log.error(f'Ошибка {msg}, попытка востановления № {retries} пауза на: {t} секунд', exc_info=True)
-                    print(retries, ' - ' ,t)
                     time.sleep(t)
                     retries += 1
         return inner
