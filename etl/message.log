@@ -1,0 +1,458 @@
+[etl_to_pg] ['2022-12-26 16:06:46'] [ERROR] => Ошибка Postgres: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 20, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[etl_to_pg] ['2022-12-26 16:08:27'] [ERROR] => Ошибка Postgres: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 21, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[etl_to_pg] ['2022-12-26 16:19:10'] [ERROR] => Ошибка Postgres: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 21, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[etl_to_pg] ['2022-12-26 16:20:52'] [ERROR] => Ошибка Postgres: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 20, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[etl_to_pg] ['2022-12-26 16:21:13'] [ERROR] => Ошибка Postgres: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 20, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[etl_to_pg] ['2022-12-26 16:21:38'] [ERROR] => Ошибка Postgres: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 20, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[etl_to_pg] ['2022-12-26 16:21:59'] [ERROR] => Ошибка Postgres: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 20, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:27:41'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, пауза на: 0.1 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:18'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №0 пауза на: 0.1 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:18'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №1 пауза на: 0.2 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:18'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №2 пауза на: 0.4 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:18'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №3 пауза на: 0.8 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:19'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №4 пауза на: 1.6 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:21'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №5 пауза на: 3.2 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:24'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №6 пауза на: 6.4 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:29:30'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления №7 пауза на: 12.8 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:30:19'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления № 0 пауза на: 0.1 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:30:19'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления № 1 пауза на: 0.2 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:30:19'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления № 2 пауза на: 0.4 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:30:20'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления № 3 пауза на: 0.8 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:30:20'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления № 4 пауза на: 1.6 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:30:22'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления № 5 пауза на: 3.2 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-26 20:30:25'] [ERROR] => Ошибка connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+, попытка востановления № 6 пауза на: 6.4 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 19, in conn_context_pg
+    pg_conn = psycopg2.connect(**dsl, cursor_factory=DictCursor)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[decorate] ['2022-12-27 15:31:49'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 0 пауза на: 0.1 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:31:49'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 1 пауза на: 0.2 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:31:49'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 2 пауза на: 0.4 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:31:49'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 3 пауза на: 0.8 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:31:50'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 4 пауза на: 1.6 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:31:52'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 5 пауза на: 3.2 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:31:55'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 6 пауза на: 6.4 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:32:22'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 0 пауза на: 0.1 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:32:22'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 1 пауза на: 0.2 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:32:22'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 2 пауза на: 0.4 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:32:23'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 3 пауза на: 0.8 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
+[decorate] ['2022-12-27 15:32:24'] [ERROR] => Ошибка Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed, попытка востановления № 4 пауза на: 1.6 секунд
+Traceback (most recent call last):
+  File "/home/pavel/store/Practicum/ETL/decorate.py", line 27, in inner
+    result = func(*args, **kwargs)
+  File "/home/pavel/store/Practicum/ETL/etl_to_pg.py", line 23, in es_connect
+    elastic = Elasticsearch(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 331, in __init__
+    node_configs = client_node_configs(
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 105, in client_node_configs
+    node_configs = hosts_to_node_configs(hosts)
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 154, in hosts_to_node_configs
+    node_configs.append(host_mapping_to_node_config(host))
+  File "/home/pavel/store/Practicum/ETL/venv/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 178, in host_mapping_to_node_config
+    raise ValueError(
+ValueError: Can't specify the options 'http_auth' via a dictionary in 'hosts', only 'host', 'path_prefix', 'port', 'scheme', 'url_prefix', 'use_ssl' options are allowed
