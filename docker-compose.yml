@@ -1,0 +1,42 @@
+version: '3.7'
+services:
+  db:
+    container_name: dev_db
+    image: postgres:13.9-alpine
+    restart: always
+    env_file: ./etl/config/.env
+    volumes:
+      - ./db/pg_data:/var/lib/postgresql/data/
+      - ./restore/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    expose:
+      - "5432"
+
+  elastic:
+    container_name: elasticDB
+    image: elasticsearch:7.17.8
+    environment:
+      discovery.type: "single-node"
+      ES_JAVA_OPTS: "-Xms200m -Xmx200m"
+    volumes:
+      - ./db/es_data:/usr/share/elasticsearch/data
+    expose:
+      - "9200"
+    healthcheck:
+      test: curl -s curl http://localhost:9200/_cluster/health?pretty
+      interval: 30s
+      timeout: 10s
+      retries: 50
+
+  etl:
+    container_name: etl
+    build: ./etl
+    env_file: ./etl/config/.env
+    volumes:
+      - ./etl/message.log:/message.log
+    depends_on:
+        - db
+        - elastic
+    entrypoint: /etl/entrypoint.sh
+
+volumes:
+  db:
