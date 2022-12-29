@@ -18,4 +18,4 @@ WORKDIR /etl
 # copy project
 COPY . .
 
-#ENTRYPOINT ["python", "etl_to_pg.py"]
+ENTRYPOINT ["python", "etl_to_pg.py"]
