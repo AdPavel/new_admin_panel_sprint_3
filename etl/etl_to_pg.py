@@ -30,22 +30,19 @@ def es_connect(es_dsl):
 
 
 def etl_process(pg_conn: _connection, es_conn: Elasticsearch, state: state.State):
-
-    param_dict = {'fw': 'modified',
-                  'pr': 'person_modified',
-                  'gn': 'genre_modified'}
-
     postgres_extractor = PgExtractor(pg_conn, state)
     els = EsLoader(es_conn)
 
-    data, key = postgres_extractor.extract()
-    if data:
-        transform_data = Transform().transforming(data)
-        if not els.make_load(transform_data):
-            return None
-        state.set_state(key, data[-1][param_dict[key]])
-    else:
-        return None
+    try:
+        data, key = postgres_extractor.extract()
+        if data:
+            transform_data = Transform().transforming(data)
+            if not els.make_load(transform_data):
+                return False, None
+            state.set_state(key, data[-1]['modified'])
+            return key, len(data)
+    except:
+        return False, None
 
 
 if __name__ == '__main__':
@@ -56,11 +53,15 @@ if __name__ == '__main__':
     es_dsl = {'host': settings.es_host, 'port': settings.es_port,
               'scheme': settings.es_scheme}
 
-    storage = state.JsonFileStorage('store.json')
+    storage = state.JsonFileStorage(settings.storage_file)
     state = state.State(storage)
 
     while True:
         with pg_connect(dsl) as pg_conn, es_connect(es_dsl) as es_conn:
-            if not etl_process(pg_conn, es_conn, state):
-                log.warning('No data to update')
-                time.sleep(30)
+            key, transfer_count = etl_process(pg_conn, es_conn, state)
+            if key:
+                log.info(f'Для таблицы "{key.split("_")[1]}" в ElasticSearch перенесена пачка из {transfer_count} '
+                         f'записей.')
+            else:
+                log.info('Нет данных для переноса в ElasticSearch.')
+                time.sleep(settings.iteration_pause)
