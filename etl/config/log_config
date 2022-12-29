@@ -1,7 +1,7 @@
 #These are the loggers that are available from the code
 #Each logger requires a handler, but can have more than one
 [loggers]
-keys=root, decorate, etl_to_pg, processes
+keys=root, decorate, etl_to_pg, processes, state
 
 
 #Each handler requires a single formatter
@@ -35,6 +35,12 @@ propagate=0
 level=DEBUG
 handlers=consoleHandler
 qualname=processes
+propagate=0
+
+[logger_state]
+level=DEBUG
+handlers=consoleHandler
+qualname=state
 propagate=0
 
 # Do not use a console logger when running scripts from a bat file without a console
