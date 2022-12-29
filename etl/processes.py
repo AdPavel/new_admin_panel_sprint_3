@@ -12,43 +12,26 @@ class PgExtractor:
     def __init__(self, pg_conn, state):
         self.conn = pg_conn
         self.state = state
-        self.table = (self.extract_filmwork, self.extract_person, self.extract_genre)
+        self.table = {'etl_filmwork_status': 'fw.modified',
+                      'etl_person_status': 'p.modified',
+                      'etl_genre_status': 'g.modified'}
+
 
     @backoff()
-    def extract_filmwork(self) -> tuple:
+    def extract_table(self, key, field) -> tuple:
         curs = self.conn.cursor()
-        filmwork_state = self.state.get_state('fw')
-        query = queries.get_query('film_work').format(str(filmwork_state))
+        state = self.state.get_state(key)
+        query = queries.get_query().format(modified_date=str(state), modified_field=field)
         curs.execute(query)
         data = curs.fetchall()
         curs.close()
-        return 'fw', data
-
-    @backoff()
-    def extract_person(self) -> tuple:
-        curs = self.conn.cursor()
-        person_state = self.state.get_state('pr')
-        curs.execute(queries.get_query('person').format(person_state))
-        data = curs.fetchall()
-        curs.close()
-        return 'pr', data
-
-    @backoff()
-    def extract_genre(self) -> tuple:
-        curs = self.conn.cursor()
-        genre_state = self.state.get_state('gn')
-        curs.execute(queries.get_query('genre').format(genre_state))
-        data = curs.fetchall()
-        curs.close()
-        return 'gn', data
+        return data
 
     def extract(self) -> tuple:
-        for extractor in self.table:
-            key, data = extractor()
+        for key, field in self.table.items():
+            data = self.extract_table(key, field)
             if data:
                 return data, key
-            else:
-                return None, None
 
 
 class Transform:
@@ -76,7 +59,7 @@ class EsLoader:
         self.index_name = index_name
 
     @backoff()
-    def create_index(self):
+    def create_index(self) -> None:
         settings = movies_idx.body
         connect = self.es_conn
         if not connect.indices.exists(index=self.index_name):
@@ -96,7 +79,7 @@ class EsLoader:
             log.debug(results['took'])
             log.debug(results['errors'])
             log.debug(error)
-            return None
+            return False
         return True
 
     def make_load(self, datas: list) -> bool:
