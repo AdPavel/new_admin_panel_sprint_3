@@ -3,6 +3,10 @@ from typing import Any, Optional
 import json
 import os
 from redis import Redis
+import logging.config
+
+logging.config.fileConfig('config/log_config')
+log = logging.getLogger(__name__)
 
 
 class BaseStorage:
@@ -47,7 +51,7 @@ class JsonFileStorage(BaseStorage):
             with open(self.file_path, 'w') as write_file:
                 json.dump(self.data, write_file, indent=2, default=str)
         else:
-            self.data = json.dumps(state)
+            raise ValueError(f'Не указан файл состояний')
 
     def retrieve_state(self) -> dict:
         if self.file_path:
@@ -57,12 +61,21 @@ class JsonFileStorage(BaseStorage):
                         self.data = json.load(read_file)
                         return self.data
                 else:
+                    self.init_file()
                     return self.data
-            except OSError:
+            except OSError as msg:
+                log.warning(f'Не найден файл состояний: {self.file_path}. Файл будет инициализирован. {msg}')
+                self.init_file()
                 return self.data
         else:
-            return self.data
+            raise ValueError(f'Не указан файл состояний')
 
+    def init_file(self):
+        self.data = {'etl_filmwork_status': '1900-01-01 00:00:00 +00:00',
+                     'etl_person_status': '1900-01-01 00:00:00 +00:00',
+                     'etl_genre_status': '1900-01-01 00:00:00 +00:00'}
+        with open(self.file_path, 'w') as write_file:
+            json.dump(self.data, write_file, indent=2, default=str)
 
 class State:
     """
