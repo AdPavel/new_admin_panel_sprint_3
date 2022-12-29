@@ -36,7 +36,6 @@ services:
     depends_on:
         - db
         - elastic
-    entrypoint: /etl/entrypoint.sh
 
 volumes:
   db:
